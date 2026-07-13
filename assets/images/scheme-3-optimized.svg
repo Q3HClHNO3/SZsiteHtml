@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fafc"/><g stroke="#dbe4ea" stroke-width="1"><path d="M0 780 800 350 1600 780M0 850 800 420 1600 850"/><path d="M250 900 800 350M525 900 800 350M800 900V350M1075 900 800 350M1350 900 800 350"/></g>
+  <g fill="#ecfeff" stroke="#0e7490" stroke-width="4"><path d="m300 670 190-95V410l-190 95z"/><path d="m550 715 235-117V285L550 402z"/><path d="m845 585 220-110V250L845 360z"/><path d="m1100 695 170-85V450l-170 85z"/></g>
+  <g fill="none" stroke="#f59e0b"><path d="m395 622 272-136 288 64 230 58" stroke-width="13"/><path d="m667 486 288-144M667 486l-2 170M955 550l0-208" stroke-width="8"/></g>
+  <g fill="#f59e0b"><circle cx="395" cy="622" r="14"/><circle cx="667" cy="486" r="18"/><circle cx="955" cy="550" r="18"/><circle cx="1185" cy="608" r="14"/></g><path d="m445 740 260-130 235 118-260 130z" fill="#d1fae5" stroke="#059669" stroke-width="4"/>
+  <text x="90" y="105" fill="#0f172a" font-family="Arial, sans-serif" font-size="34" font-weight="700">SCHEME 03 / OPTIMIZED</text><text x="92" y="148" fill="#64748b" font-family="Arial, sans-serif" font-size="18">INTEGRATED LINKAGE AND PUBLIC REALM</text><text x="90" y="820" fill="#0e7490" font-family="Arial, sans-serif" font-size="22" font-weight="700">方案三优化 · 综合提升</text>
+</svg>
