@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <g stroke="#dbe4ea" stroke-width="1">
+    <path d="M0 690 800 300 1600 690M0 760 800 370 1600 760M0 830 800 440 1600 830"/>
+    <path d="M200 900 800 300M500 900 800 300M800 900V300M1100 900 800 300M1400 900 800 300"/>
+  </g>
+  <g fill="none" stroke="#0e7490" stroke-width="4" opacity=".7">
+    <path d="m480 610 320-155 320 155-320 155z"/>
+    <path d="M590 557v-95l210-102 210 102v95M690 509V402M910 509V402"/>
+  </g>
+  <circle cx="800" cy="360" r="9" fill="#f59e0b"/>
+  <text x="90" y="105" fill="#0f172a" font-family="Arial, sans-serif" font-size="34" font-weight="700">MODEL IMPORT INTERFACE</text>
+  <text x="92" y="148" fill="#64748b" font-family="Arial, sans-serif" font-size="18">BASE SURFACE SYSTEM / AWAITING PROJECT MODEL</text>
+  <text x="90" y="820" fill="#0e7490" font-family="Arial, sans-serif" font-size="22" font-weight="700">模型导入基准视图</text>
+</svg>

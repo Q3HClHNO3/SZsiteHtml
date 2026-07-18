@@ -1,0 +1,85 @@
+{
+  "defaultPresetId": "default-research",
+  "presets": {
+    "default-research": {
+      "id": "default-research",
+      "name": "默认研究公式参数",
+      "formulaVersion": "research-formula-v2",
+      "capacity": {
+        "effectiveFactors": {
+          "underground": 0.8,
+          "ground": 1.0,
+          "upper": 0.6
+        }
+      },
+      "connectivity": {
+        "tleMode": "ppt-research",
+        "displayScoreReference": 3.0,
+        "representativeWidthEstimate": {
+          "inputMode": "representative-width-estimate",
+          "dataStatus": "estimated",
+          "representativeWidth": 7,
+          "Wf": 1.2,
+          "dataSource": "基于典型常规连廊宽度7m的专业估算",
+          "verified": false
+        },
+        "connectedFloorUnitReferenceM2": {
+          "aboveGround": 4000,
+          "underground": 2000
+        },
+        "corridorWidthEfficiency": [
+          { "min": null, "max": 2.0, "includeMax": false, "coefficient": 0.5 },
+          { "min": 2.0, "max": 3.5, "includeMax": false, "coefficient": 0.8 },
+          { "min": 3.5, "max": 5.0, "includeMax": false, "coefficient": 1.0 },
+          { "min": 5.0, "max": 7.0, "includeMax": true, "coefficient": 1.2 },
+          { "min": 7.0, "max": null, "includeMax": true, "coefficient": 1.4 }
+        ]
+      },
+      "facility": {
+        "moduleAreaM2": 100,
+        "baseLevelCoefficients": {
+          "underground": 0.8,
+          "ground": 1.0,
+          "upper": 0.6
+        },
+        "functionalWeights": {
+          "dining": 5.0,
+          "cultureEntertainment": 4.5,
+          "retail": 4.0,
+          "sports": 3.5,
+          "park": 3.0,
+          "health": 2.0,
+          "government": 1.0
+        },
+        "activityScores": {
+          "A1": 2.5,
+          "A2": 2.0,
+          "A3": 1.0,
+          "A4": 1.5
+        },
+        "operationScores": {
+          "T1": 1.0,
+          "T2": 1.5,
+          "T3": 2.5,
+          "T4": 1.0
+        },
+        "idealOverallMix": {
+          "A1": 0.30,
+          "A2": 0.25,
+          "A3": 0.05,
+          "A4": 0.40
+        },
+        "idealVerticalMix": {
+          "A1": { "underground": 0.40, "ground": 0.50, "upper": 0.10 },
+          "A2": { "underground": 0.10, "ground": 0.70, "upper": 0.20 },
+          "A3": { "underground": 0.05, "ground": 0.85, "upper": 0.10 },
+          "A4": { "underground": 0.10, "ground": 0.50, "upper": 0.40 }
+        },
+        "displayScoreReference": 1.0
+      },
+      "display": {
+        "capacityReference": 5.0
+      }
+    }
+  }
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高强度片区基面系统立体化评估 | 深圳湾超级总部基地</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* 极简滚动条 (全局) */
+    ::-webkit-scrollbar { width: 4px; height: 4px; }
+    ::-webkit-scrollbar-track { background: #f8fafc; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 2px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-in { animation: fadeIn 0.3s ease-out forwards; }
+
+    /* 表格容器独立滚动条 */
+    .table-container {
+      max-height: calc(100vh - 300px); 
+      overflow-y: auto;
+    }
+    .table-container::-webkit-scrollbar { width: 6px; }
+    .table-container::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 4px; }
+    .table-container::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
+
+    .data-table { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 0.8rem; }
+    
+    /* 表头吸顶 (Sticky Header) */
+    .data-table th { 
+      background-color: #f1f5f9; 
+      font-weight: 600; 
+      color: #334155; 
+      padding: 10px 8px; 
+      text-align: left; 
+      position: sticky; 
+      top: 0; 
+      z-index: 10;
+      box-shadow: inset 0 1px 0 #e2e8f0, inset 0 -1px 0 #e2e8f0, inset 1px 0 0 #e2e8f0, inset -1px 0 0 #e2e8f0;
+    }
+    .data-table td { 
+      border-bottom: 1px solid #e2e8f0; 
+      border-right: 1px solid #e2e8f0;
+      padding: 6px 8px; 
+      color: #475569; 
+    }
+    .data-table td:first-child { border-left: 1px solid #e2e8f0; }
+    
+    /* 输入框统一样式 */
+    .input-field {
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      padding: 4px 8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    .input-field:focus {
+      outline: none;
+      border-color: #0e7490;
+      box-shadow: 0 0 0 2px rgba(14, 116, 144, 0.1);
+    }
+
+    .model-preview-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 60;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      background: rgba(15, 23, 42, 0.55);
+      backdrop-filter: blur(3px);
+    }
+    .model-preview-modal.is-open { display: flex; }
+    .model-preview-dialog {
+      width: min(72vw, 920px);
+      max-height: 86vh;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      box-shadow: 0 24px 80px rgba(15, 23, 42, 0.28);
+      overflow: hidden;
+      animation: fadeIn 0.2s ease-out forwards;
+    }
+    .model-preview-image {
+      width: 100%;
+      max-height: calc(86vh - 56px);
+      object-fit: contain;
+      display: block;
+      background: #f8fafc;
+    }
+    .map-imported-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: none;
+      background: #f8fafc;
+      z-index: 1;
+    }
+    .map-imported-image.is-visible { display: block; }
+    .model-image-fallback {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
+      padding: 32px;
+      background: #f8fafc;
+    }
+    .model-image-fallback.is-visible { display: flex; }
+    .map-model-fallback {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+    }
+    .model-fallback-card {
+      width: min(440px, 82%);
+      padding: 28px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+      text-align: left;
+    }
+    .map-upload-placeholder.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .presentation-mode .detail-table-block {
+      display: none;
+    }
+    .presentation-mode #right-panel {
+      width: 520px;
+    }
+  </style>
+</head>
+<body class="bg-[#fcfcfc] h-screen flex overflow-hidden font-sans text-slate-800">
+
+  <aside class="w-64 bg-white border-r border-slate-200 flex flex-col z-20 shadow-sm flex-shrink-0">
+    <div class="h-14 flex items-center px-5 border-b border-slate-100">
+      <div class="w-7 h-7 bg-cyan-800 rounded flex items-center justify-center text-white text-xs font-bold mr-3 shadow-lg shadow-cyan-900/20">
+        SZ
+      </div>
+      <span class="font-bold text-base tracking-tight text-slate-700">城市高强度片区基面系统辅助设计决策平台</span>
+    </div>
+    
+    <div class="flex-1 overflow-y-auto py-6 px-4 space-y-8" id="sidebar-content">
+      </div>
+
+    <div class="p-4 border-t border-slate-100">
+      <button id="export-report-button" class="w-full py-2.5 bg-slate-50 hover:bg-slate-100 text-slate-500 rounded text-xs font-medium transition-all flex items-center justify-center gap-2 border border-slate-200">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" stroke-width="2"/></svg>
+        导出评估报告
+      </button>
+    </div>
+  </aside>
+
+  <div class="flex-1 flex flex-col h-screen overflow-hidden relative">
+    <header class="h-14 bg-white/80 backdrop-blur-md border-b border-slate-200 flex items-center justify-between px-6 z-10">
+      <div class="flex items-center gap-4">
+        <h1 class="text-sm font-medium text-slate-400">基面系统立体化核心指标</h1>
+        <div class="h-4 w-[1px] bg-slate-200"></div>
+        <div class="text-cyan-800 font-bold text-base tracking-wider">深圳湾超级总部基地</div>
+        <div class="h-4 w-[1px] bg-slate-200"></div>
+        
+        <div class="relative group">
+          <select id="scheme-selector" onchange="handleSchemeChange(event)" class="appearance-none bg-cyan-50/50 text-cyan-700 font-semibold px-4 py-1.5 rounded-full cursor-pointer focus:outline-none text-xs border border-cyan-100 hover:bg-cyan-100 transition-colors">
+            <option value="方案一">方案一</option>
+            <option value="方案二">方案二</option>
+            <option value="方案三">方案三</option>
+            <option value="方案三优化">方案三优化</option>
+          </select>
+          <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-cyan-600">
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-width="3"/></svg>
+          </div>
+        </div>
+        <span id="recommended-scheme-badge" class="hidden text-[11px] font-bold text-cyan-800 bg-cyan-50 border border-cyan-100 rounded-full px-3 py-1"></span>
+      </div>
+      <button id="presentation-mode-button" class="text-xs font-medium text-slate-500 hover:text-cyan-800 bg-white border border-slate-200 hover:border-cyan-100 px-3 py-1.5 rounded transition-colors">
+        面试展示模式
+      </button>
+    </header>
+
+    <main class="flex-1 relative flex overflow-hidden bg-slate-50">
+      
+      <div class="flex-1 relative p-8">
+        <div class="w-full h-full bg-slate-50 rounded-xl shadow-inner border-2 border-dashed border-slate-300 overflow-hidden relative group flex flex-col items-center justify-center hover:bg-slate-100/50 transition-colors cursor-pointer">
+          <img id="map-imported-image" class="map-imported-image" src="" alt="已导入的模型图片">
+          <div id="map-model-fallback" class="model-image-fallback map-model-fallback" aria-live="polite">
+            <div class="model-fallback-card">
+              <div class="text-[10px] font-bold tracking-[0.18em] text-cyan-800">MODEL RESOURCE STATUS</div>
+              <h3 class="mt-3 text-base font-bold text-slate-800">模型视图待导入</h3>
+              <dl class="mt-4 space-y-2 text-xs text-slate-500">
+                <div><dt class="inline font-medium text-slate-700">当前方案：</dt><dd id="map-fallback-scheme" class="inline"></dd></div>
+                <div><dt class="inline font-medium text-slate-700">当前模块：</dt><dd id="map-fallback-module" class="inline"></dd></div>
+                <div><dt class="inline font-medium text-slate-700">资源提示：</dt><dd id="map-fallback-path" class="inline break-all"></dd></div>
+              </dl>
+            </div>
+          </div>
+          <section id="project-intro-card" class="absolute left-6 top-6 z-10 w-[420px] bg-white/95 border border-slate-200 rounded-xl shadow-sm p-5 text-left backdrop-blur">
+            <div class="text-[10px] font-bold text-cyan-800 tracking-[0.18em] uppercase">Portfolio Prototype</div>
+            <h2 class="mt-2 text-base font-bold text-slate-800">城市空间性能评估产品原型</h2>
+            <p class="mt-2 text-xs leading-relaxed text-slate-500">
+              面向高强度城市片区，基于方案参数快速评估基面容量、连接效率与设施布局效能，形成“参数输入—指标计算—方案对比—优化建议—报告导出”的最小闭环。
+            </p>
+            <div id="project-intro-metrics" class="mt-4 grid grid-cols-3 gap-2 text-center"></div>
+          </section>
+          <div id="map-upload-placeholder" class="map-upload-placeholder flex flex-col items-center justify-center text-slate-400 group-hover:scale-105 transition-transform duration-300">
+            <svg class="w-16 h-16 mb-4 text-slate-300 group-hover:text-cyan-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 11v6m0-6l-3 3m3-3l3 3"></path>
+            </svg>
+            <span class="text-sm font-medium text-slate-500">点击或拖拽上传该模块视图</span>
+            <span class="text-xs text-slate-400 mt-2">支持 .png, .jpg, .rvt 格式</span>
+          </div>
+          <button id="map-status-button" onclick="openSchemeDataPanel()" class="absolute bottom-6 left-6 bg-white/90 hover:bg-white backdrop-blur-md px-5 py-3 rounded-lg shadow-sm hover:shadow-md border border-slate-200 flex flex-col z-10 transition-all text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-cyan-700/30 hidden" aria-label="打开当前方案数据表">
+            <span class="text-[11px] tracking-[0.2em] font-bold text-cyan-800 mb-1 uppercase" id="map-module-label">SYSTEM LOADED</span>
+            <span class="text-xs text-slate-500 font-mono flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+              <span id="map-status">AWAITING UPLOAD...</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div id="right-panel" class="w-[480px] bg-white border-l border-slate-200 shadow-2xl z-10 flex flex-col transform transition-transform duration-500 translate-x-full absolute right-0 h-full">
+        <div class="h-14 border-b border-slate-100 flex items-center justify-between px-6 bg-slate-50/50 flex-shrink-0">
+          <h2 class="font-bold text-slate-700 text-sm" id="panel-title">评估结果</h2>
+          <button onclick="closePanel()" class="text-slate-400 hover:text-slate-600 p-1 rounded-full hover:bg-slate-100 transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-width="2.5"/></svg>
+          </button>
+        </div>
+        <div class="flex-1 overflow-hidden flex flex-col p-6 space-y-4" id="panel-content">
+          </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="model-preview-modal" class="model-preview-modal" onclick="closeModelImageModal(event)" aria-hidden="true">
+    <div class="model-preview-dialog" role="dialog" aria-modal="true" aria-labelledby="model-preview-title" onclick="event.stopPropagation()">
+      <div class="h-14 px-5 border-b border-slate-100 flex items-center justify-between bg-white">
+        <div>
+          <h2 id="model-preview-title" class="text-sm font-bold text-slate-700">导入模型预览</h2>
+          <p id="model-preview-path" class="text-[11px] text-slate-400 mt-0.5"></p>
+        </div>
+        <button onclick="closeModelImageModal()" class="text-slate-400 hover:text-slate-600 p-1.5 rounded-full hover:bg-slate-100 transition-all" aria-label="关闭图片预览">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-width="2.5"/></svg>
+        </button>
+      </div>
+      <img id="model-preview-image" class="model-preview-image" src="" alt="模型预览图">
+      <div id="modal-model-fallback" class="model-image-fallback" aria-live="polite">
+        <div class="model-fallback-card">
+          <div class="text-[10px] font-bold tracking-[0.18em] text-cyan-800">MODEL RESOURCE STATUS</div>
+          <h3 class="mt-3 text-base font-bold text-slate-800">模型视图待导入</h3>
+          <dl class="mt-4 space-y-2 text-xs text-slate-500">
+            <div><dt class="inline font-medium text-slate-700">当前方案：</dt><dd id="modal-fallback-scheme" class="inline"></dd></div>
+            <div><dt class="inline font-medium text-slate-700">当前模块：</dt><dd id="modal-fallback-module" class="inline"></dd></div>
+            <div><dt class="inline font-medium text-slate-700">资源提示：</dt><dd id="modal-fallback-path" class="inline break-all"></dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/app.js"></script>
+
+</body>
+</html>

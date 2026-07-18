@@ -1,0 +1,1971 @@
+{
+  "projectName": "城市高强度片区基面系统辅助设计决策平台",
+  "projectSubtitle": "深圳湾超级总部基地",
+  "idealWeights": {
+    "surface": 0.5,
+    "underground": 0.3,
+    "elevated": 0.2
+  },
+  "schemes": {
+    "方案一": {
+      "name": "方案一",
+      "description": "方案一示例数据",
+      "inputs": {
+        "landArea": 237461.94,
+        "constructionLandArea": 193121.75,
+        "totalFloorArea": 1158486,
+        "buildingBaseArea": 86019.67,
+        "floorAreaRatio": 4.88,
+        "coverageRate": 41,
+        "plazaArea": 107102.08,
+        "undergroundArea": 37052.9,
+        "surfaceArea": 135547.1,
+        "elevatedArea": 8664.1,
+        "levels": 4,
+        "systemCount": 3,
+        "officeArea": 93429.22,
+        "commercialArea": 240240.72,
+        "supportArea": 38138.7,
+        "effectiveCoefficient": 1,
+        "projectionArea": 135547.1,
+        "influenceArea": 1193121.75,
+        "connectionNodes": 3,
+        "totalBaseArea": 181264.1,
+        "multiLevelIndex": 1.34,
+        "connectedFloors": 20,
+        "corridorWidthFactor": 1.4,
+        "corridorDataStatus": "estimated",
+        "corridors": [],
+        "corridorAreaByWidthClass": [],
+        "representativeWidthEstimate": {
+          "inputMode": "representative-width-estimate",
+          "dataStatus": "estimated",
+          "representativeWidth": 7,
+          "Wf": 1.2,
+          "dataSource": "基于典型常规连廊宽度7m的专业估算",
+          "verified": false
+        },
+        "legacyWf": 1.4,
+        "facilities": [],
+        "legacyFacilityRatios": {
+          "functional": 0.3,
+          "experiential": 0.326,
+          "social": 0.051,
+          "spontaneous": 0.32299999999999995
+        }
+      },
+      "raw": {
+        "params": [
+          {
+            "category": "基础数据",
+            "label": "用地面积",
+            "value": "237461.94",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "建设用地面积",
+            "value": "193121.75",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "总建筑面积",
+            "value": "1158486",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "建筑基底面积",
+            "value": "86019.67",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "容积率",
+            "value": "4.88",
+            "unit": ""
+          },
+          {
+            "category": "基础数据",
+            "label": "覆盖率",
+            "value": "41.0",
+            "unit": "%"
+          },
+          {
+            "category": "公共空间",
+            "label": "广场面积",
+            "value": "107102.08",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "地下基面",
+            "value": "37052.9",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "地表基面",
+            "value": "135547.1",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "地上基面",
+            "value": "8664.1",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "层数",
+            "value": "4",
+            "unit": "层"
+          },
+          {
+            "category": "基面系统",
+            "label": "系统总数",
+            "value": "3",
+            "unit": "个"
+          },
+          {
+            "category": "功能占比",
+            "label": "办公面积",
+            "value": "93429.22",
+            "unit": "㎡"
+          },
+          {
+            "category": "功能占比",
+            "label": "商业面积",
+            "value": "240240.72",
+            "unit": "㎡"
+          },
+          {
+            "category": "功能占比",
+            "label": "配套面积",
+            "value": "38138.7",
+            "unit": "㎡"
+          }
+        ],
+        "capacity": [
+          {
+            "category": "基面容量",
+            "label": "基面分布效能指数D",
+            "value": "0.82",
+            "unit": ""
+          },
+          {
+            "category": "基面容量",
+            "label": "基面容量指数C",
+            "value": "2.88",
+            "unit": ""
+          },
+          {
+            "category": "分层公共空间面积（Ai）",
+            "label": "地表层",
+            "value": "135547.10",
+            "unit": "㎡"
+          },
+          {
+            "category": "分层公共空间面积（Ai）",
+            "label": "地下层",
+            "value": "37052.90",
+            "unit": "㎡"
+          },
+          {
+            "category": "分层公共空间面积（Ai）",
+            "label": "地上层",
+            "value": "8664.10",
+            "unit": "㎡"
+          },
+          {
+            "category": "优化参数",
+            "label": "优化参数",
+            "value": "1.0",
+            "unit": ""
+          },
+          {
+            "category": "垂直分层有效系数（Ni）",
+            "label": "地表层",
+            "value": "1.0",
+            "unit": ""
+          },
+          {
+            "category": "垂直分层有效系数（Ni）",
+            "label": "地下层",
+            "value": "0.8",
+            "unit": ""
+          },
+          {
+            "category": "垂直分层有效系数（Ni）",
+            "label": "地上层",
+            "value": "0.6",
+            "unit": ""
+          },
+          {
+            "category": "分层理想权重（Wi）",
+            "label": "地表层",
+            "value": "0.5",
+            "unit": ""
+          },
+          {
+            "category": "分层理想权重（Wi）",
+            "label": "地下层",
+            "value": "0.3",
+            "unit": ""
+          },
+          {
+            "category": "分层理想权重（Wi）",
+            "label": "地上层",
+            "value": "0.2",
+            "unit": ""
+          },
+          {
+            "category": "分层实际占比（Pi）",
+            "label": "地表层",
+            "value": "74.8",
+            "unit": "%"
+          },
+          {
+            "category": "分层实际占比（Pi）",
+            "label": "地下层",
+            "value": "20.4",
+            "unit": "%"
+          },
+          {
+            "category": "分层实际占比（Pi）",
+            "label": "地上层",
+            "value": "4.8",
+            "unit": "%"
+          },
+          {
+            "category": "基面系统层数（n）",
+            "label": "地表层",
+            "value": "1",
+            "unit": "层"
+          },
+          {
+            "category": "基面系统层数（n）",
+            "label": "地下层",
+            "value": "1",
+            "unit": "层"
+          },
+          {
+            "category": "基面系统层数（n）",
+            "label": "地上层",
+            "value": "1",
+            "unit": "层"
+          },
+          {
+            "category": "分布效能计算",
+            "label": "权重和",
+            "value": "0.09",
+            "unit": ""
+          },
+          {
+            "category": "分布效能计算",
+            "label": "分层比",
+            "value": "0.03",
+            "unit": ""
+          }
+        ],
+        "efficiency": [
+          {
+            "category": "连接效率",
+            "label": "水平连接指数HCI",
+            "value": "0.12",
+            "unit": ""
+          },
+          {
+            "category": "连接效率",
+            "label": "垂直连接指数VCI",
+            "value": "8.70",
+            "unit": ""
+          },
+          {
+            "category": "连接效率",
+            "label": "立体链接效能指数TLEI",
+            "value": "1.42",
+            "unit": ""
+          },
+          {
+            "category": "立体基面覆盖率（MPR）",
+            "label": "立体基面投影面积P",
+            "value": "135547.1",
+            "unit": "㎡"
+          },
+          {
+            "category": "立体基面覆盖率（MPR）",
+            "label": "影响域面积A",
+            "value": "1193121.75",
+            "unit": "㎡"
+          },
+          {
+            "category": "立体基面覆盖率（MPR）",
+            "label": "MPR计算值",
+            "value": "0.70",
+            "unit": ""
+          },
+          {
+            "category": "立体基面连接度（MCI）",
+            "label": "连接节点数N",
+            "value": "3",
+            "unit": "个"
+          },
+          {
+            "category": "立体基面连接度（MCI）",
+            "label": "立体基面总面积S",
+            "value": "181264.10",
+            "unit": "㎡"
+          },
+          {
+            "category": "立体基面连接度（MCI）",
+            "label": "MCI计算值",
+            "value": "0.17",
+            "unit": "万m²"
+          },
+          {
+            "category": "立体基面层阶度（MLI）",
+            "label": "MLI计算值",
+            "value": "1.34",
+            "unit": ""
+          },
+          {
+            "category": "基面连通率（MSCR）",
+            "label": "基面连接楼层数Fi",
+            "value": "20",
+            "unit": "层"
+          },
+          {
+            "category": "基面连通率（MSCR）",
+            "label": "MSCR计算值",
+            "value": "6.51",
+            "unit": "%"
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "宽度＜2.0m区间",
+            "value": "0.5",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "2.0-3.5m区间",
+            "value": "0.8",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "3.5-5.0m区间",
+            "value": "1.0",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "5.0-7.0m区间",
+            "value": "1.2",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "宽度＞7.0m区间",
+            "value": "1.4",
+            "unit": ""
+          },
+          {
+            "category": "连廊宽度效能因子（Wf）",
+            "label": "Wf计算值",
+            "value": "1.40",
+            "unit": ""
+          }
+        ],
+        "quality": [
+          {
+            "category": "设施布局评估值",
+            "label": "设施布局指数（FLI）",
+            "value": "0.68",
+            "unit": ""
+          },
+          {
+            "category": "设施布局评估值",
+            "label": "设施功能效能指数（FE）",
+            "value": "0.75",
+            "unit": ""
+          },
+          {
+            "category": "设施布局评估值",
+            "label": "设施布局复合指数（LA）",
+            "value": "0.91",
+            "unit": ""
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "全局配比",
+            "value": "30.0",
+            "unit": "%"
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "地下基面配比",
+            "value": "30.7",
+            "unit": "%"
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "地表基面配比",
+            "value": "68.4",
+            "unit": "%"
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "地上基面配比",
+            "value": "4.5",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "全局配比",
+            "value": "32.6",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "地下基面配比",
+            "value": "33.5",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "地表基面配比",
+            "value": "65.9",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "地上基面配比",
+            "value": "0.6",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "全局配比",
+            "value": "5.1",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "地下基面配比",
+            "value": "17.0",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "地表基面配比",
+            "value": "66.4",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "地上基面配比",
+            "value": "16.6",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "全局配比",
+            "value": "32.3",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "地下基面配比",
+            "value": "25.9",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "地表基面配比",
+            "value": "46.9",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "地上基面配比",
+            "value": "27.2",
+            "unit": "%"
+          }
+        ]
+      }
+    },
+    "方案二": {
+      "name": "方案二",
+      "description": "方案二示例数据",
+      "inputs": {
+        "landArea": 237461.94,
+        "constructionLandArea": 193121.75,
+        "totalFloorArea": 1158486,
+        "buildingBaseArea": 108268.73,
+        "floorAreaRatio": 4.88,
+        "coverageRate": 41,
+        "plazaArea": 84853.02,
+        "undergroundArea": 69297.71,
+        "surfaceArea": 113298.04,
+        "elevatedArea": 32322.58,
+        "levels": 4,
+        "systemCount": 3,
+        "officeArea": 71742.86,
+        "commercialArea": 77640.08,
+        "supportArea": 34903.58,
+        "effectiveCoefficient": 1,
+        "projectionArea": 113298.04,
+        "influenceArea": 193121.75,
+        "connectionNodes": 3,
+        "totalBaseArea": 214918.33,
+        "multiLevelIndex": 1.9,
+        "connectedFloors": 36,
+        "corridorWidthFactor": 1.4,
+        "corridorDataStatus": "estimated",
+        "corridors": [],
+        "corridorAreaByWidthClass": [],
+        "representativeWidthEstimate": {
+          "inputMode": "representative-width-estimate",
+          "dataStatus": "estimated",
+          "representativeWidth": 7,
+          "Wf": 1.2,
+          "dataSource": "基于典型常规连廊宽度7m的专业估算",
+          "verified": false
+        },
+        "legacyWf": 1.4,
+        "facilities": [],
+        "legacyFacilityRatios": {
+          "functional": 0.3,
+          "experiential": 0.326,
+          "social": 0.051,
+          "spontaneous": 0.32299999999999995
+        }
+      },
+      "raw": {
+        "params": [
+          {
+            "category": "基础数据",
+            "label": "用地面积",
+            "value": "237461.94",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "建设用地面积",
+            "value": "193121.75",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "总建筑面积",
+            "value": "1158486",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "建筑基底面积",
+            "value": "108268.73",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "容积率",
+            "value": "4.88",
+            "unit": ""
+          },
+          {
+            "category": "基础数据",
+            "label": "覆盖率",
+            "value": "41.0",
+            "unit": "%"
+          },
+          {
+            "category": "公共空间",
+            "label": "广场面积",
+            "value": "84853.02",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "地下基面",
+            "value": "69297.71",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "地表基面",
+            "value": "113298.04",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "地上基面",
+            "value": "32322.58",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "层数",
+            "value": "4",
+            "unit": "层"
+          },
+          {
+            "category": "基面系统",
+            "label": "系统总数",
+            "value": "3",
+            "unit": "个"
+          },
+          {
+            "category": "功能占比",
+            "label": "办公面积",
+            "value": "71742.86",
+            "unit": "㎡"
+          },
+          {
+            "category": "功能占比",
+            "label": "商业面积",
+            "value": "77640.08",
+            "unit": "㎡"
+          },
+          {
+            "category": "功能占比",
+            "label": "配套面积",
+            "value": "34903.58",
+            "unit": "㎡"
+          }
+        ],
+        "capacity": [
+          {
+            "category": "基面容量",
+            "label": "基面分布效能指数D",
+            "value": "0.96",
+            "unit": ""
+          },
+          {
+            "category": "基面容量",
+            "label": "基面容量指数C",
+            "value": "3.72",
+            "unit": ""
+          },
+          {
+            "category": "分层公共空间面积（Ai）",
+            "label": "地表层",
+            "value": "113298.04",
+            "unit": "㎡"
+          },
+          {
+            "category": "分层公共空间面积（Ai）",
+            "label": "地下层",
+            "value": "69297.71",
+            "unit": "㎡"
+          },
+          {
+            "category": "分层公共空间面积（Ai）",
+            "label": "地上层",
+            "value": "32322.58",
+            "unit": "㎡"
+          },
+          {
+            "category": "优化参数",
+            "label": "优化参数",
+            "value": "1.0",
+            "unit": ""
+          },
+          {
+            "category": "垂直分层有效系数（Ni）",
+            "label": "地表层",
+            "value": "1.0",
+            "unit": ""
+          },
+          {
+            "category": "垂直分层有效系数（Ni）",
+            "label": "地下层",
+            "value": "0.8",
+            "unit": ""
+          },
+          {
+            "category": "垂直分层有效系数（Ni）",
+            "label": "地上层",
+            "value": "0.6",
+            "unit": ""
+          },
+          {
+            "category": "分层理想权重（Wi）",
+            "label": "地表层",
+            "value": "0.50",
+            "unit": ""
+          },
+          {
+            "category": "分层理想权重（Wi）",
+            "label": "地下层",
+            "value": "0.30",
+            "unit": ""
+          },
+          {
+            "category": "分层理想权重（Wi）",
+            "label": "地上层",
+            "value": "0.20",
+            "unit": ""
+          },
+          {
+            "category": "分层实际占比（Pi）",
+            "label": "地表层",
+            "value": "52.7",
+            "unit": "%"
+          },
+          {
+            "category": "分层实际占比（Pi）",
+            "label": "地下层",
+            "value": "32.2",
+            "unit": "%"
+          },
+          {
+            "category": "分层实际占比（Pi）",
+            "label": "地上层",
+            "value": "15.0",
+            "unit": "%"
+          },
+          {
+            "category": "基面系统层数（n）",
+            "label": "地表层",
+            "value": "1",
+            "unit": "层"
+          },
+          {
+            "category": "基面系统层数（n）",
+            "label": "地下层",
+            "value": "1",
+            "unit": "层"
+          },
+          {
+            "category": "基面系统层数（n）",
+            "label": "地上层",
+            "value": "1",
+            "unit": "层"
+          },
+          {
+            "category": "分布效能计算",
+            "label": "权重和",
+            "value": "0.0037",
+            "unit": ""
+          },
+          {
+            "category": "分布效能计算",
+            "label": "分层比",
+            "value": "0.0012",
+            "unit": ""
+          }
+        ],
+        "efficiency": [
+          {
+            "category": "连接效率",
+            "label": "水平连接指数HCI",
+            "value": "0.08",
+            "unit": ""
+          },
+          {
+            "category": "连接效率",
+            "label": "垂直连接指数VCI",
+            "value": "22.54",
+            "unit": ""
+          },
+          {
+            "category": "连接效率",
+            "label": "立体链接效能指数TLEI",
+            "value": "2.58",
+            "unit": ""
+          },
+          {
+            "category": "立体基面覆盖率（MPR）",
+            "label": "立体基面投影面积P",
+            "value": "113298.04",
+            "unit": "㎡"
+          },
+          {
+            "category": "立体基面覆盖率（MPR）",
+            "label": "影响域面积A",
+            "value": "193121.75",
+            "unit": "㎡"
+          },
+          {
+            "category": "立体基面覆盖率（MPR）",
+            "label": "MPR计算值",
+            "value": "0.59",
+            "unit": ""
+          },
+          {
+            "category": "立体基面连接度（MCI）",
+            "label": "连接节点数N",
+            "value": "3",
+            "unit": "个"
+          },
+          {
+            "category": "立体基面连接度（MCI）",
+            "label": "立体基面总面积S",
+            "value": "214918.33",
+            "unit": "㎡"
+          },
+          {
+            "category": "立体基面连接度（MCI）",
+            "label": "MCI计算值",
+            "value": "0.14",
+            "unit": "万m²"
+          },
+          {
+            "category": "立体基面层阶度（MLI）",
+            "label": "MLI计算值",
+            "value": "1.90",
+            "unit": ""
+          },
+          {
+            "category": "基面连通率（MSCR）",
+            "label": "基面连接楼层数Fi",
+            "value": "36",
+            "unit": "层"
+          },
+          {
+            "category": "基面连通率（MSCR）",
+            "label": "MSCR计算值",
+            "value": "11.88",
+            "unit": "%"
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "宽度＜2.0m区间",
+            "value": "0.5",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "2.0-3.5m区间",
+            "value": "0.8",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "3.5-5.0m区间",
+            "value": "1.0",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "5.0-7.0m区间",
+            "value": "1.2",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "宽度＞7.0m区间",
+            "value": "1.4",
+            "unit": ""
+          },
+          {
+            "category": "连廊宽度效能因子（Wf）",
+            "label": "Wf计算值",
+            "value": "1.40",
+            "unit": ""
+          }
+        ],
+        "quality": [
+          {
+            "category": "设施布局评估值",
+            "label": "设施布局指数（FLI）",
+            "value": "0.68",
+            "unit": ""
+          },
+          {
+            "category": "设施布局评估值",
+            "label": "设施功能效能指数（FE）",
+            "value": "0.75",
+            "unit": ""
+          },
+          {
+            "category": "设施布局评估值",
+            "label": "设施布局复合指数（LA）",
+            "value": "0.91",
+            "unit": ""
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "全局配比",
+            "value": "30.0",
+            "unit": "%"
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "地下基面配比",
+            "value": "30.7",
+            "unit": "%"
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "地表基面配比",
+            "value": "68.4",
+            "unit": "%"
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "地上基面配比",
+            "value": "4.5",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "全局配比",
+            "value": "32.6",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "地下基面配比",
+            "value": "33.5",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "地表基面配比",
+            "value": "65.9",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "地上基面配比",
+            "value": "0.6",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "全局配比",
+            "value": "5.1",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "地下基面配比",
+            "value": "17.0",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "地表基面配比",
+            "value": "66.4",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "地上基面配比",
+            "value": "16.6",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "全局配比",
+            "value": "32.3",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "地下基面配比",
+            "value": "25.9",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "地表基面配比",
+            "value": "46.9",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "地上基面配比",
+            "value": "27.2",
+            "unit": "%"
+          }
+        ]
+      }
+    },
+    "方案三": {
+      "name": "方案三",
+      "description": "方案三示例数据",
+      "inputs": {
+        "landArea": 237464.94,
+        "constructionLandArea": 193121.75,
+        "totalFloorArea": 5000000,
+        "buildingBaseArea": 1158486,
+        "floorAreaRatio": 4.88,
+        "coverageRate": 41,
+        "plazaArea": 104511.16,
+        "undergroundArea": 71346.37,
+        "surfaceArea": 132956.18,
+        "elevatedArea": 32322.58,
+        "levels": 4,
+        "systemCount": 3,
+        "officeArea": 55233.68,
+        "commercialArea": 101104.24,
+        "supportArea": 34903.58,
+        "effectiveCoefficient": 1,
+        "projectionArea": 132956.18,
+        "influenceArea": 193121.75,
+        "connectionNodes": 3,
+        "totalBaseArea": 236625.13,
+        "multiLevelIndex": 1.78,
+        "connectedFloors": 37,
+        "corridorWidthFactor": 1.4,
+        "corridorDataStatus": "estimated",
+        "corridors": [],
+        "corridorAreaByWidthClass": [],
+        "representativeWidthEstimate": {
+          "inputMode": "representative-width-estimate",
+          "dataStatus": "estimated",
+          "representativeWidth": 7,
+          "Wf": 1.2,
+          "dataSource": "基于典型常规连廊宽度7m的专业估算",
+          "verified": false
+        },
+        "legacyWf": 1.4,
+        "facilities": [],
+        "legacyFacilityRatios": {
+          "functional": 0.3,
+          "experiential": 0.326,
+          "social": 0.051,
+          "spontaneous": 0.32299999999999995
+        }
+      },
+      "raw": {
+        "params": [
+          {
+            "category": "基础数据",
+            "label": "用地面积",
+            "value": "237464.94",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "建设用地面积",
+            "value": "193121.75",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "总建筑面积",
+            "value": "5,000,000",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "建筑基底面积",
+            "value": "1158486",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "容积率",
+            "value": "4.88",
+            "unit": ""
+          },
+          {
+            "category": "基础数据",
+            "label": "覆盖率",
+            "value": "41.0",
+            "unit": "%"
+          },
+          {
+            "category": "公共空间",
+            "label": "广场面积",
+            "value": "104511.16",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "地下基面",
+            "value": "71346.37",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "地表基面",
+            "value": "132956.18",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "地上基面",
+            "value": "32322.58",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "层数",
+            "value": "4",
+            "unit": "层"
+          },
+          {
+            "category": "基面系统",
+            "label": "系统总数",
+            "value": "3",
+            "unit": "个"
+          },
+          {
+            "category": "功能占比",
+            "label": "办公面积",
+            "value": "55233.68",
+            "unit": "㎡"
+          },
+          {
+            "category": "功能占比",
+            "label": "商业面积",
+            "value": "101104.24",
+            "unit": "㎡"
+          },
+          {
+            "category": "功能占比",
+            "label": "配套面积",
+            "value": "34903.58",
+            "unit": "㎡"
+          }
+        ],
+        "capacity": [
+          {
+            "category": "基面容量",
+            "label": "基面分布效能指数D",
+            "value": "0.95",
+            "unit": ""
+          },
+          {
+            "category": "基面容量",
+            "label": "基面容量指数C",
+            "value": "4.07",
+            "unit": ""
+          },
+          {
+            "category": "分层公共空间面积（Ai）",
+            "label": "地表层",
+            "value": "132956.18",
+            "unit": "㎡"
+          },
+          {
+            "category": "分层公共空间面积（Ai）",
+            "label": "地下层",
+            "value": "71346.37",
+            "unit": "㎡"
+          },
+          {
+            "category": "分层公共空间面积（Ai）",
+            "label": "地上层",
+            "value": "32322.58",
+            "unit": "㎡"
+          },
+          {
+            "category": "优化参数",
+            "label": "优化参数",
+            "value": "1.0",
+            "unit": ""
+          },
+          {
+            "category": "垂直分层有效系数（Ni）",
+            "label": "地表层",
+            "value": "1.0",
+            "unit": ""
+          },
+          {
+            "category": "垂直分层有效系数（Ni）",
+            "label": "地下层",
+            "value": "0.8",
+            "unit": ""
+          },
+          {
+            "category": "垂直分层有效系数（Ni）",
+            "label": "地上层",
+            "value": "0.6",
+            "unit": ""
+          },
+          {
+            "category": "分层理想权重（Wi）",
+            "label": "地表层",
+            "value": "0.5",
+            "unit": ""
+          },
+          {
+            "category": "分层理想权重（Wi）",
+            "label": "地下层",
+            "value": "0.3",
+            "unit": ""
+          },
+          {
+            "category": "分层理想权重（Wi）",
+            "label": "地上层",
+            "value": "0.2",
+            "unit": ""
+          },
+          {
+            "category": "分层实际占比（Pi）",
+            "label": "地表层",
+            "value": "56.2",
+            "unit": "%"
+          },
+          {
+            "category": "分层实际占比（Pi）",
+            "label": "地下层",
+            "value": "30.2",
+            "unit": "%"
+          },
+          {
+            "category": "分层实际占比（Pi）",
+            "label": "地上层",
+            "value": "13.7",
+            "unit": "%"
+          },
+          {
+            "category": "基面系统层数（n）",
+            "label": "地表层",
+            "value": "1",
+            "unit": "层"
+          },
+          {
+            "category": "基面系统层数（n）",
+            "label": "地下层",
+            "value": "1",
+            "unit": "层"
+          },
+          {
+            "category": "基面系统层数（n）",
+            "label": "地上层",
+            "value": "1",
+            "unit": "层"
+          },
+          {
+            "category": "分布效能计算",
+            "label": "权重和",
+            "value": "0.0079",
+            "unit": ""
+          },
+          {
+            "category": "分布效能计算",
+            "label": "分层比",
+            "value": "0.0026",
+            "unit": ""
+          }
+        ],
+        "efficiency": [
+          {
+            "category": "连接效率",
+            "label": "水平连接指数HCI",
+            "value": "0.09",
+            "unit": ""
+          },
+          {
+            "category": "连接效率",
+            "label": "垂直连接指数VCI",
+            "value": "21.76",
+            "unit": ""
+          },
+          {
+            "category": "连接效率",
+            "label": "立体链接效能指数TLEI",
+            "value": "2.66",
+            "unit": ""
+          },
+          {
+            "category": "立体基面覆盖率（MPR）",
+            "label": "立体基面投影面积P",
+            "value": "132956.18",
+            "unit": "㎡"
+          },
+          {
+            "category": "立体基面覆盖率（MPR）",
+            "label": "影响域面积A",
+            "value": "193121.75",
+            "unit": "㎡"
+          },
+          {
+            "category": "立体基面覆盖率（MPR）",
+            "label": "MPR计算值",
+            "value": "0.69",
+            "unit": ""
+          },
+          {
+            "category": "立体基面连接度（MCI）",
+            "label": "连接节点数N",
+            "value": "3",
+            "unit": "个"
+          },
+          {
+            "category": "立体基面连接度（MCI）",
+            "label": "立体基面总面积S",
+            "value": "236625.13",
+            "unit": "㎡"
+          },
+          {
+            "category": "立体基面连接度（MCI）",
+            "label": "MCI计算值",
+            "value": "0.13",
+            "unit": "万m²"
+          },
+          {
+            "category": "立体基面层阶度（MLI）",
+            "label": "MLI计算值",
+            "value": "1.78",
+            "unit": ""
+          },
+          {
+            "category": "基面连通率（MSCR）",
+            "label": "基面连接楼层数Fi",
+            "value": "37",
+            "unit": "层"
+          },
+          {
+            "category": "基面连通率（MSCR）",
+            "label": "MSCR计算值",
+            "value": "12.22",
+            "unit": "%"
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "宽度＜2.0m区间",
+            "value": "0.5",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "2.0-3.5m区间",
+            "value": "0.8",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "3.5-5.0m区间",
+            "value": "1.0",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "5.0-7.0m区间",
+            "value": "1.2",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "宽度＞7.0m区间",
+            "value": "1.4",
+            "unit": ""
+          },
+          {
+            "category": "连廊宽度效能因子（Wf）",
+            "label": "Wf计算值",
+            "value": "1.40",
+            "unit": ""
+          }
+        ],
+        "quality": [
+          {
+            "category": "设施布局评估值",
+            "label": "设施布局指数（FLI）",
+            "value": "0.68",
+            "unit": ""
+          },
+          {
+            "category": "设施布局评估值",
+            "label": "设施功能效能指数（FE）",
+            "value": "0.75",
+            "unit": ""
+          },
+          {
+            "category": "设施布局评估值",
+            "label": "设施布局复合指数（LA）",
+            "value": "0.91",
+            "unit": ""
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "全局配比",
+            "value": "30.0",
+            "unit": "%"
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "地下基面配比",
+            "value": "30.7",
+            "unit": "%"
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "地表基面配比",
+            "value": "68.4",
+            "unit": "%"
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "地上基面配比",
+            "value": "4.5",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "全局配比",
+            "value": "32.6",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "地下基面配比",
+            "value": "33.5",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "地表基面配比",
+            "value": "65.9",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "地上基面配比",
+            "value": "0.6",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "全局配比",
+            "value": "5.1",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "地下基面配比",
+            "value": "17.0",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "地表基面配比",
+            "value": "66.4",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "地上基面配比",
+            "value": "16.6",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "全局配比",
+            "value": "32.3",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "地下基面配比",
+            "value": "25.9",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "地表基面配比",
+            "value": "46.9",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "地上基面配比",
+            "value": "27.2",
+            "unit": "%"
+          }
+        ]
+      }
+    },
+    "方案三优化": {
+      "name": "方案三优化",
+      "description": "方案三优化示例数据",
+      "inputs": {
+        "landArea": 237464.94,
+        "constructionLandArea": 193121.75,
+        "totalFloorArea": 1158486,
+        "buildingBaseArea": 88610.59,
+        "floorAreaRatio": 4.88,
+        "coverageRate": 41,
+        "plazaArea": 104511.16,
+        "undergroundArea": 85615.64,
+        "surfaceArea": 132956.18,
+        "elevatedArea": 38787.1,
+        "levels": 4,
+        "systemCount": 3,
+        "officeArea": 55233.68,
+        "commercialArea": 34903.58,
+        "supportArea": 191241.5,
+        "effectiveCoefficient": 1.2,
+        "projectionArea": 132956.18,
+        "influenceArea": 193121.75,
+        "connectionNodes": 3,
+        "totalBaseArea": 257358.92,
+        "multiLevelIndex": 1.94,
+        "connectedFloors": 44,
+        "corridorWidthFactor": 1.4,
+        "corridorDataStatus": "estimated",
+        "corridors": [],
+        "corridorAreaByWidthClass": [],
+        "representativeWidthEstimate": {
+          "inputMode": "representative-width-estimate",
+          "dataStatus": "estimated",
+          "representativeWidth": 7,
+          "Wf": 1.2,
+          "dataSource": "基于典型常规连廊宽度7m的专业估算",
+          "verified": false
+        },
+        "legacyWf": 1.4,
+        "facilities": [],
+        "legacyFacilityRatios": {
+          "functional": 0.3,
+          "experiential": 0.326,
+          "social": 0.051,
+          "spontaneous": 0.32299999999999995
+        }
+      },
+      "raw": {
+        "params": [
+          {
+            "category": "基础数据",
+            "label": "用地面积",
+            "value": "237464.94",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "建设用地面积",
+            "value": "193121.75",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "总建筑面积",
+            "value": "1158486",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "建筑基底面积",
+            "value": "88610.59",
+            "unit": "㎡"
+          },
+          {
+            "category": "基础数据",
+            "label": "容积率",
+            "value": "4.88",
+            "unit": ""
+          },
+          {
+            "category": "基础数据",
+            "label": "覆盖率",
+            "value": "41.0",
+            "unit": "%"
+          },
+          {
+            "category": "公共空间",
+            "label": "广场面积",
+            "value": "104511.16",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "地下基面",
+            "value": "27352.56",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "地表基面",
+            "value": "132956.18",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "地上基面",
+            "value": "32322.58",
+            "unit": "㎡"
+          },
+          {
+            "category": "基面系统",
+            "label": "层数",
+            "value": "4",
+            "unit": "层"
+          },
+          {
+            "category": "基面系统",
+            "label": "系统总数",
+            "value": "3",
+            "unit": "个"
+          },
+          {
+            "category": "功能占比",
+            "label": "办公面积",
+            "value": "55233.68",
+            "unit": "㎡"
+          },
+          {
+            "category": "功能占比",
+            "label": "商业面积",
+            "value": "34903.58",
+            "unit": "㎡"
+          },
+          {
+            "category": "功能占比",
+            "label": "配套面积",
+            "value": "191241.5",
+            "unit": "㎡"
+          }
+        ],
+        "capacity": [
+          {
+            "category": "基面容量",
+            "label": "基面分布效能指数D",
+            "value": "0.96",
+            "unit": ""
+          },
+          {
+            "category": "基面容量",
+            "label": "基面容量指数C",
+            "value": "4.44",
+            "unit": ""
+          },
+          {
+            "category": "分层公共空间面积（Ai）",
+            "label": "地表层",
+            "value": "132956.18",
+            "unit": "㎡"
+          },
+          {
+            "category": "分层公共空间面积（Ai）",
+            "label": "地下层",
+            "value": "85615.64",
+            "unit": "㎡"
+          },
+          {
+            "category": "分层公共空间面积（Ai）",
+            "label": "地上层",
+            "value": "38787.10",
+            "unit": "㎡"
+          },
+          {
+            "category": "优化参数",
+            "label": "优化参数",
+            "value": "1.20",
+            "unit": ""
+          },
+          {
+            "category": "垂直分层有效系数（Ni）",
+            "label": "地表层",
+            "value": "1.0",
+            "unit": ""
+          },
+          {
+            "category": "垂直分层有效系数（Ni）",
+            "label": "地下层",
+            "value": "0.8",
+            "unit": ""
+          },
+          {
+            "category": "垂直分层有效系数（Ni）",
+            "label": "地上层",
+            "value": "0.6",
+            "unit": ""
+          },
+          {
+            "category": "分层理想权重（Wi）",
+            "label": "地表层",
+            "value": "0.5",
+            "unit": ""
+          },
+          {
+            "category": "分层理想权重（Wi）",
+            "label": "地下层",
+            "value": "0.3",
+            "unit": ""
+          },
+          {
+            "category": "分层理想权重（Wi）",
+            "label": "地上层",
+            "value": "0.2",
+            "unit": ""
+          },
+          {
+            "category": "分层实际占比（Pi）",
+            "label": "地表层",
+            "value": "51.7",
+            "unit": "%"
+          },
+          {
+            "category": "分层实际占比（Pi）",
+            "label": "地下层",
+            "value": "33.3",
+            "unit": "%"
+          },
+          {
+            "category": "分层实际占比（Pi）",
+            "label": "地上层",
+            "value": "15.1",
+            "unit": "%"
+          },
+          {
+            "category": "基面系统层数（n）",
+            "label": "地表层",
+            "value": "1",
+            "unit": "层"
+          },
+          {
+            "category": "基面系统层数（n）",
+            "label": "地下层",
+            "value": "1",
+            "unit": "层"
+          },
+          {
+            "category": "基面系统层数（n）",
+            "label": "地上层",
+            "value": "1",
+            "unit": "层"
+          },
+          {
+            "category": "分布效能计算",
+            "label": "权重和",
+            "value": "0.0038",
+            "unit": ""
+          },
+          {
+            "category": "分布效能计算",
+            "label": "分层比",
+            "value": "0.0013",
+            "unit": ""
+          }
+        ],
+        "efficiency": [
+          {
+            "category": "连接效率",
+            "label": "水平连接指数HCI",
+            "value": "0.08",
+            "unit": ""
+          },
+          {
+            "category": "连接效率",
+            "label": "垂直连接指数VCI",
+            "value": "28.27",
+            "unit": ""
+          },
+          {
+            "category": "连接效率",
+            "label": "立体链接效能指数TLEI",
+            "value": "3.18",
+            "unit": ""
+          },
+          {
+            "category": "立体基面覆盖率（MPR）",
+            "label": "立体基面投影面积P",
+            "value": "132956.18",
+            "unit": "㎡"
+          },
+          {
+            "category": "立体基面覆盖率（MPR）",
+            "label": "影响域面积A",
+            "value": "193121.75",
+            "unit": "㎡"
+          },
+          {
+            "category": "立体基面覆盖率（MPR）",
+            "label": "MPR计算值",
+            "value": "0.69",
+            "unit": ""
+          },
+          {
+            "category": "立体基面连接度（MCI）",
+            "label": "连接节点数N",
+            "value": "3",
+            "unit": "个"
+          },
+          {
+            "category": "立体基面连接度（MCI）",
+            "label": "立体基面总面积S",
+            "value": "257358.92",
+            "unit": "㎡"
+          },
+          {
+            "category": "立体基面连接度（MCI）",
+            "label": "MCI计算值",
+            "value": "0.12",
+            "unit": "万m²"
+          },
+          {
+            "category": "立体基面层阶度（MLI）",
+            "label": "MLI计算值",
+            "value": "1.94",
+            "unit": ""
+          },
+          {
+            "category": "基面连通率（MSCR）",
+            "label": "基面连接楼层数Fi",
+            "value": "44",
+            "unit": "层"
+          },
+          {
+            "category": "基面连通率（MSCR）",
+            "label": "MSCR计算值",
+            "value": "14.60",
+            "unit": "%"
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "宽度＜2.0m区间",
+            "value": "0.5",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "2.0-3.5m区间",
+            "value": "0.8",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "3.5-5.0m区间",
+            "value": "1.0",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "5.0-7.0m区间",
+            "value": "1.2",
+            "unit": ""
+          },
+          {
+            "category": "通行效率系数（Ci）",
+            "label": "宽度＞7.0m区间",
+            "value": "1.4",
+            "unit": ""
+          },
+          {
+            "category": "连廊宽度效能因子（Wf）",
+            "label": "Wf计算值",
+            "value": "1.40",
+            "unit": ""
+          }
+        ],
+        "quality": [
+          {
+            "category": "设施布局评估值",
+            "label": "设施布局指数（FLI）",
+            "value": "0.68",
+            "unit": ""
+          },
+          {
+            "category": "设施布局评估值",
+            "label": "设施功能效能指数（FE）",
+            "value": "0.75",
+            "unit": ""
+          },
+          {
+            "category": "设施布局评估值",
+            "label": "设施布局复合指数（LA）",
+            "value": "0.91",
+            "unit": ""
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "全局配比",
+            "value": "30.0",
+            "unit": "%"
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "地下基面配比",
+            "value": "30.7",
+            "unit": "%"
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "地表基面配比",
+            "value": "68.4",
+            "unit": "%"
+          },
+          {
+            "category": "A1功能性导向设施",
+            "label": "地上基面配比",
+            "value": "4.5",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "全局配比",
+            "value": "32.6",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "地下基面配比",
+            "value": "33.5",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "地表基面配比",
+            "value": "65.9",
+            "unit": "%"
+          },
+          {
+            "category": "A2体验性导向设施",
+            "label": "地上基面配比",
+            "value": "0.6",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "全局配比",
+            "value": "5.1",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "地下基面配比",
+            "value": "17.0",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "地表基面配比",
+            "value": "66.4",
+            "unit": "%"
+          },
+          {
+            "category": "A3社会性导向设施",
+            "label": "地上基面配比",
+            "value": "16.6",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "全局配比",
+            "value": "32.3",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "地下基面配比",
+            "value": "25.9",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "地表基面配比",
+            "value": "46.9",
+            "unit": "%"
+          },
+          {
+            "category": "A4自发性导向设施",
+            "label": "地上基面配比",
+            "value": "27.2",
+            "unit": "%"
+          }
+        ]
+      }
+    }
+  }
+}

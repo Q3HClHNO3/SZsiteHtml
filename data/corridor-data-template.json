@@ -1,0 +1,146 @@
+{
+  "formulaVersion": "research-formula-v2",
+  "instructions": "当前默认采用典型7m连廊专业估算 Wf=1.20。逐条或汇总数据缺失时保持 null，不要当作 0；完成 Rhino/CAD 核验后，verified corridors 或 verified corridorAreaByWidthClass 将优先覆盖估算值。",
+  "schemes": {
+    "方案一": {
+      "dataStatus": "estimated",
+      "corridors": [
+        {
+          "id": null,
+          "name": null,
+          "level": null,
+          "elevation": null,
+          "length": null,
+          "width": null,
+          "area": null,
+          "coefficient": null,
+          "dataSource": null,
+          "verified": false
+        }
+      ],
+      "corridorAreaByWidthClass": [
+        {
+          "range": null,
+          "area": null,
+          "coefficient": null,
+          "dataSource": null,
+          "verified": false
+        }
+      ],
+      "representativeWidthEstimate": {
+        "inputMode": "representative-width-estimate",
+        "dataStatus": "estimated",
+        "representativeWidth": 7,
+        "Wf": 1.2,
+        "dataSource": "基于典型常规连廊宽度7m的专业估算",
+        "verified": false
+      },
+      "legacyWf": null
+    },
+    "方案二": {
+      "dataStatus": "estimated",
+      "corridors": [
+        {
+          "id": null,
+          "name": null,
+          "level": null,
+          "elevation": null,
+          "length": null,
+          "width": null,
+          "area": null,
+          "coefficient": null,
+          "dataSource": null,
+          "verified": false
+        }
+      ],
+      "corridorAreaByWidthClass": [
+        {
+          "range": null,
+          "area": null,
+          "coefficient": null,
+          "dataSource": null,
+          "verified": false
+        }
+      ],
+      "representativeWidthEstimate": {
+        "inputMode": "representative-width-estimate",
+        "dataStatus": "estimated",
+        "representativeWidth": 7,
+        "Wf": 1.2,
+        "dataSource": "基于典型常规连廊宽度7m的专业估算",
+        "verified": false
+      },
+      "legacyWf": null
+    },
+    "方案三": {
+      "dataStatus": "estimated",
+      "corridors": [
+        {
+          "id": null,
+          "name": null,
+          "level": null,
+          "elevation": null,
+          "length": null,
+          "width": null,
+          "area": null,
+          "coefficient": null,
+          "dataSource": null,
+          "verified": false
+        }
+      ],
+      "corridorAreaByWidthClass": [
+        {
+          "range": null,
+          "area": null,
+          "coefficient": null,
+          "dataSource": null,
+          "verified": false
+        }
+      ],
+      "representativeWidthEstimate": {
+        "inputMode": "representative-width-estimate",
+        "dataStatus": "estimated",
+        "representativeWidth": 7,
+        "Wf": 1.2,
+        "dataSource": "基于典型常规连廊宽度7m的专业估算",
+        "verified": false
+      },
+      "legacyWf": null
+    },
+    "方案三优化": {
+      "dataStatus": "estimated",
+      "corridors": [
+        {
+          "id": null,
+          "name": null,
+          "level": null,
+          "elevation": null,
+          "length": null,
+          "width": null,
+          "area": null,
+          "coefficient": null,
+          "dataSource": null,
+          "verified": false
+        }
+      ],
+      "corridorAreaByWidthClass": [
+        {
+          "range": null,
+          "area": null,
+          "coefficient": null,
+          "dataSource": null,
+          "verified": false
+        }
+      ],
+      "representativeWidthEstimate": {
+        "inputMode": "representative-width-estimate",
+        "dataStatus": "estimated",
+        "representativeWidth": 7,
+        "Wf": 1.2,
+        "dataSource": "基于典型常规连廊宽度7m的专业估算",
+        "verified": false
+      },
+      "legacyWf": null
+    }
+  }
+}
