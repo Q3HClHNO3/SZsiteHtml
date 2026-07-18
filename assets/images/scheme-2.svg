@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
-  <rect width="1600" height="900" fill="#f8fafc"/><g stroke="#dbe4ea" stroke-width="1"><path d="M0 780 800 350 1600 780M0 850 800 420 1600 850"/><path d="M250 900 800 350M525 900 800 350M800 900V350M1075 900 800 350M1350 900 800 350"/></g>
-  <g fill="#ecfeff" stroke="#0e7490" stroke-width="4"><path d="m350 680 230-115V390L350 505z"/><path d="m700 610 245-122V250L700 372z"/><path d="m1000 690 190-95V430l-190 95z"/></g>
-  <g fill="none" stroke="#f59e0b" stroke-width="12"><path d="m580 565 120 45M945 488l55 202"/><path d="m465 620 355-178 275 138" stroke-width="7"/></g>
-  <circle cx="700" cy="610" r="14" fill="#f59e0b"/><circle cx="1000" cy="690" r="14" fill="#f59e0b"/>
-  <text x="90" y="105" fill="#0f172a" font-family="Arial, sans-serif" font-size="34" font-weight="700">SCHEME 02 / CONNECTIVITY</text><text x="92" y="148" fill="#64748b" font-family="Arial, sans-serif" font-size="18">MULTI-LEVEL LINKAGE AND NODE DENSITY</text><text x="90" y="820" fill="#0e7490" font-family="Arial, sans-serif" font-size="22" font-weight="700">方案二 · 连通强化</text>
-</svg>
